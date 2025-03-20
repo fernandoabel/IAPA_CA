@@ -1,0 +1,1 @@
+ATTACHMENTS_FOLDER="./attachments/"
