@@ -1,0 +1,101 @@
+Product Name,Category,Quantity,Unit,Price per Unit,Supplier,Batch Number,Expiry Date,Expiry Status,Reorder Level
+Ibuprofen,Antibiotic,322,Tablets,11.01,HealthPharma Inc.,8B8A1F19,17/05/2026,Expiring Soon,26
+Amoxicillin,Vitamins,401,Tablets,32.49,CareMeds,E22F6272,26/09/2026,Valid,23
+Cough Syrup,Vitamins,290,Capsules,31.02,CareMeds,C4C45C88,17/05/2026,Valid,47
+Cough Syrup,Cough & Cold,461,Capsules,40.66,HealthPharma Inc.,AA107332,31/03/2026,Expired,27
+Paracetamol,Vitamins,17,Sachets,48.55,PharmaCorp,6447214,7/2/2026,Expiring Soon,34
+Amoxicillin,Pain Relief,275,Tablets,31.85,Wellness Distributors,83513BBB,13/06/2026,Expired,32
+Cough Syrup,Antibiotic,39,Capsules,21.11,PharmaCorp,00DAD00F,14/07/2025,Valid,44
+Vitamin C,First Aid,216,Bottles,13.63,HealthPharma Inc.,863F4813,5/9/2025,Valid,20
+Antacid,Cough & Cold,474,Capsules,3.35,CareMeds,8043D7AB,5/9/2026,Expiring Soon,25
+Insulin,Antibiotic,438,Capsules,21.87,HealthPharma Inc.,313A51EA,22/06/2025,Expired,30
+Amoxicillin,First Aid,444,Tablets,18.94,MediSupply Ltd.,10D7D272,1/8/2026,Expiring Soon,23
+Antacid,Digestive Aid,273,Tablets,41.07,Wellness Distributors,4DCD2BD5,17/06/2025,Expired,33
+Ibuprofen,Allergy Relief,409,Sachets,42.45,PharmaCorp,94742C39,20/04/2025,Expiring Soon,33
+Paracetamol,Vitamins,250,Sachets,14.9,PharmaCorp,4705E0BE,17/01/2027,Expired,16
+Cough Syrup,Vitamins,122,Tablets,6.41,Wellness Distributors,A2A887BF,4/3/2027,Expired,43
+Insulin,Diabetes Care,308,Bottles,25.52,PharmaCorp,CAA30B9D,25/02/2027,Expiring Soon,43
+Insulin,Cough & Cold,308,Bottles,36.27,Wellness Distributors,65B6E11E,22/07/2026,Expiring Soon,6
+Vitamin C,Allergy Relief,421,Tubes,30.47,PharmaCorp,2C222CFD,31/03/2026,Expiring Soon,24
+Antiseptic Cream,Digestive Aid,237,Tubes,6.29,Wellness Distributors,6EE465C2,4/3/2027,Valid,6
+Allergy Pills,First Aid,139,Capsules,12.55,HealthPharma Inc.,7FA614EC,24/09/2025,Expiring Soon,9
+Eye Drops,Vitamins,340,Capsules,47.4,PharmaCorp,A408D624,25/06/2025,Expiring Soon,22
+Paracetamol,Pain Relief,200,Tablets,47.93,HealthPharma Inc.,44C22426,5/12/2026,Expired,13
+Vitamin C,Cough & Cold,157,Tablets,25.56,Wellness Distributors,C57C378C,26/06/2026,Expired,32
+Eye Drops,Allergy Relief,281,Tablets,31.5,PharmaCorp,3F157A86,4/7/2026,Valid,5
+Antacid,Allergy Relief,50,Capsules,34.47,CareMeds,54EB71FC,21/04/2026,Valid,39
+Amoxicillin,Allergy Relief,189,Tablets,28.2,Wellness Distributors,6AF8F91B,8/5/2025,Valid,21
+Vitamin C,Vitamins,139,Bottles,5.86,PharmaCorp,52D1DA08,18/01/2026,Expiring Soon,25
+Eye Drops,Pain Relief,153,Capsules,4.8,PharmaCorp,C4D181A7,4/12/2025,Expired,18
+Paracetamol,Antibiotic,342,Sachets,12.78,MediSupply Ltd.,2E7F1695,18/04/2026,Expired,7
+Amoxicillin,Vitamins,278,Tubes,37.83,CareMeds,116B5692,26/12/2026,Expiring Soon,15
+Insulin,Vitamins,290,Tubes,10.34,PharmaCorp,3F2B5F39,17/05/2026,Expired,20
+Antiseptic Cream,Cough & Cold,319,Tubes,31.3,CareMeds,63509D9C,28/09/2026,Expired,14
+Eye Drops,Eye Care,110,Capsules,16.74,CareMeds,C323BA94,21/06/2026,Expired,11
+Ibuprofen,Antibiotic,426,Bottles,31.51,PharmaCorp,761F16D6,23/10/2026,Valid,8
+Ibuprofen,First Aid,222,Capsules,21.36,HealthPharma Inc.,48BF9C58,16/09/2025,Expiring Soon,46
+Antiseptic Cream,Pain Relief,11,Bottles,30.69,Wellness Distributors,B9F65765,11/9/2025,Valid,43
+Paracetamol,Allergy Relief,59,Bottles,11.53,PharmaCorp,3DCBCCDF,4/6/2026,Valid,27
+Eye Drops,Allergy Relief,186,Capsules,35.71,HealthPharma Inc.,39BAD9EE,9/8/2025,Expiring Soon,37
+Antiseptic Cream,Diabetes Care,483,Sachets,40.74,HealthPharma Inc.,89BEF60B,17/12/2025,Expired,8
+Eye Drops,Antibiotic,226,Capsules,25.36,MediSupply Ltd.,D60E772B,9/10/2025,Expiring Soon,16
+Insulin,Digestive Aid,442,Capsules,33.88,PharmaCorp,1DE85C06,24/06/2025,Valid,50
+Antiseptic Cream,First Aid,385,Capsules,43.74,CareMeds,B062F35E,26/03/2025,Expired,36
+Vitamin C,First Aid,150,Tubes,18.39,HealthPharma Inc.,CCC6FF9A,15/04/2025,Valid,40
+Vitamin C,Diabetes Care,337,Sachets,16.41,PharmaCorp,48DB99C7,18/08/2026,Valid,45
+Amoxicillin,Diabetes Care,74,Tablets,24.39,CareMeds,48937FF6,16/07/2026,Expired,41
+Vitamin C,Digestive Aid,444,Tubes,47.64,CareMeds,E1C9C137,24/08/2025,Valid,19
+Ibuprofen,Diabetes Care,114,Capsules,18.32,Wellness Distributors,9F4C2B7B,5/2/2026,Valid,48
+Vitamin C,Eye Care,61,Tubes,4.36,Wellness Distributors,9F19C779,8/4/2026,Valid,48
+Paracetamol,Vitamins,353,Sachets,17.38,PharmaCorp,AE37420A,21/11/2025,Valid,13
+Antiseptic Cream,First Aid,211,Capsules,46.76,PharmaCorp,401BFAA5,2/2/2026,Expired,37
+Allergy Pills,Allergy Relief,173,Capsules,14.68,HealthPharma Inc.,55E408CE,21/06/2026,Valid,19
+Vitamin C,Antibiotic,190,Tablets,17.3,MediSupply Ltd.,1C0A1559,23/07/2026,Expired,47
+Antacid,Allergy Relief,276,Tablets,34.87,MediSupply Ltd.,E0A75069,24/01/2026,Expired,49
+Ibuprofen,Diabetes Care,265,Capsules,43.63,Wellness Distributors,E42A0D21,9/2/2027,Expiring Soon,50
+Paracetamol,Antibiotic,150,Tablets,35.03,Wellness Distributors,2B0A7E1C,5/11/2026,Expiring Soon,41
+Ibuprofen,Antibiotic,253,Sachets,4.17,MediSupply Ltd.,DCB048FB,21/12/2026,Expiring Soon,44
+Paracetamol,Diabetes Care,79,Tubes,49.28,PharmaCorp,3405578D,18/01/2026,Expired,24
+Eye Drops,Vitamins,226,Capsules,18.67,HealthPharma Inc.,795FB226,20/03/2026,Expiring Soon,47
+Cough Syrup,Antibiotic,56,Tubes,10.85,MediSupply Ltd.,E26080A2,13/09/2025,Expired,15
+Vitamin C,First Aid,95,Tablets,39.09,Wellness Distributors,2703FA89,14/07/2025,Valid,42
+Allergy Pills,Diabetes Care,450,Tablets,30.38,HealthPharma Inc.,90600261,4/10/2025,Expiring Soon,14
+Amoxicillin,Pain Relief,248,Capsules,43.78,PharmaCorp,FDA28C84,20/12/2026,Expiring Soon,5
+Antiseptic Cream,Eye Care,70,Tubes,45.39,HealthPharma Inc.,1ABBFACD,4/1/2026,Expired,36
+Antiseptic Cream,Vitamins,433,Bottles,34.79,CareMeds,63BEE2E1,15/07/2025,Expiring Soon,17
+Antiseptic Cream,Eye Care,413,Sachets,13.49,CareMeds,65F58766,24/09/2026,Expired,36
+Eye Drops,Allergy Relief,338,Tablets,24.38,MediSupply Ltd.,BC2AEB5E,26/11/2026,Expired,27
+Amoxicillin,Cough & Cold,62,Sachets,34.44,CareMeds,9BB3CF7F,29/11/2026,Valid,19
+Antiseptic Cream,Eye Care,412,Tablets,14.5,CareMeds,E31CAF26,3/8/2025,Expired,14
+Allergy Pills,Diabetes Care,11,Tubes,4.45,Wellness Distributors,05AC5530,8/4/2025,Expiring Soon,30
+Antiseptic Cream,Digestive Aid,247,Sachets,21.81,HealthPharma Inc.,826AB223,2/12/2025,Expiring Soon,48
+Cough Syrup,Vitamins,401,Bottles,29.94,HealthPharma Inc.,FE58D88A,22/04/2025,Expiring Soon,28
+Paracetamol,Pain Relief,364,Sachets,15.41,PharmaCorp,2B0B4A7D,15/05/2025,Expiring Soon,30
+Antacid,Pain Relief,185,Bottles,9.36,CareMeds,49410A91,30/05/2026,Valid,8
+Cough Syrup,Cough & Cold,97,Tubes,17.38,MediSupply Ltd.,A4833798,20/12/2026,Expired,25
+Antacid,Digestive Aid,455,Sachets,18.57,Wellness Distributors,E5E2124A,9/12/2026,Expired,50
+Ibuprofen,Pain Relief,191,Bottles,28.9,Wellness Distributors,DFF0386F,6/3/2026,Valid,21
+Vitamin C,Vitamins,432,Tubes,9.82,PharmaCorp,727A17A9,18/10/2026,Valid,28
+Eye Drops,Eye Care,227,Sachets,35.49,PharmaCorp,D777B675,8/5/2026,Expired,20
+Ibuprofen,Cough & Cold,450,Capsules,39.72,HealthPharma Inc.,B2CB126F,9/3/2026,Expiring Soon,35
+Cough Syrup,Cough & Cold,145,Tablets,47.09,MediSupply Ltd.,600DDDF4,17/06/2026,Expiring Soon,32
+Allergy Pills,Eye Care,128,Bottles,30.27,CareMeds,BF25DA3E,23/05/2026,Valid,49
+Eye Drops,Pain Relief,283,Capsules,27.8,HealthPharma Inc.,7771E371,2/2/2026,Valid,27
+Eye Drops,Diabetes Care,299,Capsules,6.77,Wellness Distributors,C39014F5,21/09/2026,Expired,9
+Paracetamol,Eye Care,17,Tubes,4.49,CareMeds,41D775F6,9/3/2027,Valid,46
+Antiseptic Cream,Eye Care,457,Capsules,2.87,HealthPharma Inc.,3ACB3B47,24/07/2025,Expired,31
+Antacid,Diabetes Care,303,Sachets,31.41,MediSupply Ltd.,AF14CFA6,27/04/2026,Valid,18
+Cough Syrup,Allergy Relief,422,Capsules,43.91,HealthPharma Inc.,6D31CF26,19/09/2025,Expired,35
+Ibuprofen,Cough & Cold,472,Tubes,7.59,CareMeds,4C73E5B2,6/1/2026,Expired,31
+Antiseptic Cream,Eye Care,188,Tablets,14.42,MediSupply Ltd.,9118404E,11/9/2026,Valid,23
+Cough Syrup,First Aid,312,Capsules,30.65,PharmaCorp,CECB1AE1,10/2/2026,Expiring Soon,28
+Antiseptic Cream,Digestive Aid,145,Sachets,9.05,CareMeds,6A139D63,5/12/2025,Expired,41
+Antacid,Diabetes Care,88,Sachets,24.54,CareMeds,E4A008E3,25/04/2025,Expired,38
+Vitamin C,Pain Relief,219,Bottles,42.58,MediSupply Ltd.,D4422A6C,18/04/2026,Expired,15
+Paracetamol,Diabetes Care,316,Capsules,27.77,PharmaCorp,319354BD,2/12/2026,Expired,17
+Antiseptic Cream,Pain Relief,18,Sachets,7.04,HealthPharma Inc.,4A754DEB,9/1/2027,Valid,39
+Vitamin C,Cough & Cold,73,Tubes,10.22,CareMeds,86010327,25/03/2025,Expiring Soon,28
+Antacid,Diabetes Care,307,Capsules,46.67,MediSupply Ltd.,B61CCE01,17/10/2025,Expired,24
+Antiseptic Cream,Cough & Cold,394,Bottles,13.76,HealthPharma Inc.,6D734C0B,16/04/2025,Expiring Soon,37
+Antacid,Vitamins,213,Tubes,36.51,CareMeds,2.05E+08,2/2/2027,Valid,42
+Antacid,Allergy Relief,197,Capsules,9.16,Wellness Distributors,26E6B7A6,28/07/2026,Expiring Soon,45
