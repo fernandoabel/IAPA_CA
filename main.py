@@ -1,9 +1,11 @@
-from email.message import Message
 import os
+import uuid
 from dotenv import load_dotenv
 
 from database import CSVDatabase
 from mailListener import EmailClient
+from mailListener.models.message import MailMessage
+from pdfReader.pdfReader import readPdf
 
 
 
@@ -19,65 +21,72 @@ db = CSVDatabase()
 
 
 
-def check_stock_inventory(product_name: str = 'Ibuprofen') -> bool:
+def check_stock_inventory(product_name: str, quantity_needed: str) -> bool:
     """Check the stock inventory for a specific product."""
     df = db.stock_inventory.data
-    filter = (df['Product Name'] == product_name) & (df['Expiry Status'] != 'Expired') & (df['Quantity'] > 0)
-    # print(stock[filter])
+    filter = (df['Product Name'] == product_name) & (df['Expiry Status'] != 'Expired') & (df['Quantity'] >= int(quantity_needed))
     return len(df[filter]) > 0
 
 
-def add_prescription_to_database(message: Message) -> None:
+
+def add_prescription_to_database(message: MailMessage) -> None:
     """Add a prescription to the database."""
 
-    # Extract the prescription details from the email message
-    # TODO: Implement a more robust method to extract the prescription details
-    newPrescriptionReceived = {
-        'Patient Name': message['From'],
-        'Email': message['From'],
-        'Doctor Name': message['To'],
-        'Product Name': message['Subject'],
-        'Quantity': 1,
-        'Expiry Date': message['Date']
-    }
+    # Extract the prescription details from the email message PDF
+    pdfDetails = readPdf(message.attachment_fileName)
+    newPrescriptionReceived = {}
+    newPrescriptionReceived['Patient Name'] = pdfDetails['Patient Name']
+    newPrescriptionReceived['Age'] = None
+    newPrescriptionReceived['Identifier'] = str(uuid.uuid4())
+    newPrescriptionReceived['Product Name'] = None
+    newPrescriptionReceived['Quantity'] = None
+    newPrescriptionReceived['Cost'] = None
+    newPrescriptionReceived['Prescriber Name'] = pdfDetails['Prescriber Name']
+    newPrescriptionReceived['Prescription Date'] = pdfDetails['Date Dispensed']
+    newPrescriptionReceived['Healthcare Plan'] = pdfDetails['Scheme Type']
+    newPrescriptionReceived['Email'] = message.fromAddress
     
-    df = db.prescriptions.data
-
     # Check if the prescription already exists in the database
-    filter = (df['Patient Name'] == message['From']) & (df['Product Name'] == message['Subject'])
-    
+    df = db.prescriptions.data
+    filter = (df['Patient Name'] == newPrescriptionReceived['Patient Name']) & (df['Prescriber Name'] == newPrescriptionReceived['Prescriber Name']) & (df['Prescription Date'] == newPrescriptionReceived['Prescription Date'])
     if (len(df[filter]) > 0):
         print("Prescription already exists in the database.")
         return
     
     # Add the prescription to the database
-    db.prescriptions.insert(newPrescriptionReceived)
+    for product in pdfDetails['Products']:
+        if (check_stock_inventory(product['Product Name'], product['Quantity']) == True):
+            newPrescriptionReceived['Product Name'] = product['Product Name']
+            newPrescriptionReceived['Quantity'] = product['Quantity']
+            newPrescriptionReceived['Cost'] = product['Cost']
+            db.prescriptions.insert(newPrescriptionReceived)
+        else:
+            print("Product is out of stock: " + product['Product Name'])
+
     db.prescriptions.save_changes()
-    print("Prescription added to the database.")
-
-
-def email_received(message: Message) -> None:
-    """
-    Callback function to handle incoming email messages.
-    Prints the subject and content of the email.
-    """
-    print("\nSubject: " + message.subject)
-    print("Content: " + message.text if message.text else message.html)
-
-    # add_prescription_to_database(message)
+    print("Prescription(s) added to the database.")
 
 
 
 def main() -> None:
+    """
+    Callback function to handle incoming email messages.
+    Prints the subject and content of the email.
+    """
+    def email_received(message: MailMessage) -> None:
+        print("\nEmail from "+ message.fromAddress + ': ' + message.subject)
+        add_prescription_to_database(message)
+
     client = EmailClient()
-        
+
+    # Register or login to the email client
     if (EMAIL_USER == None or EMAIL_PASSWORD == None):
         client.register()
     else:
         client.login(EMAIL_USER, EMAIL_PASSWORD)
     print("Email Adress: " + str(client.address))
 
-
+    # Start the email listener
     client.start(email_received)
     print("Waiting for new emails...")
 
@@ -87,5 +96,3 @@ def main() -> None:
 
 if __name__ == '__main__':
     main()
-
-    # check_stock_inventory()

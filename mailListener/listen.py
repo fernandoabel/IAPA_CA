@@ -43,7 +43,6 @@ class Listen:
             if attachment_response.status_code == 200:
                 with open(fileName, "wb") as file:
                     file.write(attachment_response.content)
-                print(f"Downloaded: {fileName}")
             else:
                 print(f"Error downloading {fileName}: {attachment_response.status_code} - {attachment_response.text}")
 

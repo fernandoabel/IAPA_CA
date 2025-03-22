@@ -29,7 +29,7 @@ class CSVTable():
 
     def insert(self, data):
         """Insert a new record into the table."""
-        self.data = self.data.append(data, ignore_index=True)
+        self.data = pd.concat([self.data, pd.DataFrame([data], columns=self.columns)], ignore_index=True)
     
     def update(self, row_id, column, value):
         """Update a record in the table."""
@@ -51,8 +51,8 @@ class CSVDatabase:
 
     def __init__(self):
         """Initialize the database."""
-        self.prescriptions = CSVTable(self.prescriptions_file, ['Product Name','Category','Quantity','Unit','Price per Unit','Supplier','Batch Number','Expiry Date','Expiry Status','Reorder Level'])
-        self.stock_inventory = CSVTable(self.stock_file, ['Patient Name','Age','Identifier','Product Name','Dosage','Duration','Instructions','Refills','Doctor\'s Signature','Prescription Date','Healthcare Plan','Email'])
+        self.prescriptions = CSVTable(self.prescriptions_file, ['Patient Name','Age','Identifier','Product Name','Quantity','Dosage','Duration','Instructions','Refills','Prescriber Name','Prescription Date','Healthcare Plan','Email'])
+        self.stock_inventory = CSVTable(self.stock_file, ['Product Name','Category','Quantity','Unit','Price per Unit','Supplier','Batch Number','Expiry Date','Expiry Status','Reorder Level'])
     
     def save_changes(self):
         """Save all tables."""
