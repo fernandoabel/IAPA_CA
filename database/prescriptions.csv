@@ -1,1 +1,2 @@
-Patient Name,Age,Identifier,Product Name,Quantity,Dosage,Duration,Instructions,Refills,Prescriber Name,Prescription Date,Healthcare Plan,Email
+ID,Patient Name,Healthcare Plan,Patient Email,Product Name,Quantity,Prescriber Name,Prescription Date,Prescriber Email,Approval Status,In Stock
+1,Gregory Higgins,Private Scheme,gregory.higgings1@email.com,Ibuprofen,1,Dr. Krista Daniels,15/03/2025,fernandoaabel@gmail.com,Pending,

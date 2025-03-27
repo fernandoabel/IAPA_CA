@@ -29,15 +29,17 @@ class CSVTable():
 
     def insert(self, data):
         """Insert a new record into the table."""
+        if 'ID' not in data:
+            data['ID'] = str(self.data.shape[0] + 1)
         self.data = pd.concat([self.data, pd.DataFrame([data], columns=self.columns)], ignore_index=True)
     
-    def update(self, row_id, column, value):
+    def update(self, row_id, data):
         """Update a record in the table."""
-        self.data.loc[self.data['id'] == row_id, column] = value
+        self.data.loc[self.data['ID'] == row_id, :] = pd.DataFrame([data], columns=self.columns)
     
     def delete(self, row_id):
         """Delete a record from the table."""
-        self.data = self.data[self.data['id'] != row_id]
+        self.data = self.data[self.data['ID'] != row_id]
     
     def save_changes(self):
         """Save the current state of the DataFrame back to CSV."""
@@ -48,16 +50,19 @@ class CSVTable():
 class CSVDatabase:
     prescriptions_file='database/prescriptions.csv'
     stock_file='database/stock_inventory.csv'
+    regulations_file='database/regulatory_requirements.csv'
 
     def __init__(self):
         """Initialize the database."""
-        self.prescriptions = CSVTable(self.prescriptions_file, ['Patient Name','Age','Identifier','Product Name','Quantity','Dosage','Duration','Instructions','Refills','Prescriber Name','Prescription Date','Healthcare Plan','Email'])
-        self.stock_inventory = CSVTable(self.stock_file, ['Product Name','Category','Quantity','Unit','Price per Unit','Supplier','Batch Number','Expiry Date','Expiry Status','Reorder Level'])
+        self.prescriptions = CSVTable(self.prescriptions_file, ['ID','Patient Name','Healthcare Plan','Patient Email','Product Name','Quantity','Prescriber Name','Prescription Date', 'Prescriber Email','Approval Status','In Stock'])
+        self.stock_inventory = CSVTable(self.stock_file, ['ID','Product Name','Category','Quantity','Unit','Price per Unit','Supplier','Batch Number','Expiry Date','Expiry Status','Reorder Level'])
+        self.regulations = CSVTable(self.regulations_file, ['ID','Product Name','Batch Number','Date Manufactured','Meets Requirements'])
     
     def save_changes(self):
         """Save all tables."""
         self.prescriptions.save_changes()
         self.stock_inventory.save_changes()
+        self.regulations.save_changes()
 
 
 
@@ -67,4 +72,5 @@ if __name__ == "__main__":
 
     print(db.prescriptions.data)
     print(db.stock_inventory.data)
+    print(db.regulations.data)
 

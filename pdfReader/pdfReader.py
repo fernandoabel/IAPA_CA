@@ -10,6 +10,8 @@ def extractContent(col, colNext):
             return colNext
         case 'Patient Name':
             return colNext
+        case 'Patient Email':
+            return colNext
         case 'Prescriber Name':
             return colNext
         case 'Patient Address':

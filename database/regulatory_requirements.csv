@@ -1,0 +1,11 @@
+ID,Product Name,Batch Number,Date Manufactured,Meets Requirements
+1,Ibuprofen,Batch001,15/01/2024,TRUE
+2,Amoxicillin,Batch002,20/02/2024,FALSE
+3,Paracetamol,Batch003,10/03/2024,TRUE
+4,Cough Syrup,Batch004,05/04/2024,TRUE
+5,Vitamin C,Batch005,12/05/2024,FALSE
+6,Antacid,Batch006,18/06/2024,TRUE
+7,Insulin,Batch007,01/07/2024,TRUE
+8,Antiseptic Cream,Batch008,25/08/2024,FALSE
+9,Eye Drops,Batch009,30/09/2024,TRUE
+10,Allergy Pills,Batch010,11/10/2024,TRUE
